@@ -1,3 +1,248 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body {
-    margin: 0;
-} 
+	font-family: 'Smythe', cursive;
+}
+
+.container {
+	/* border: 1px solid red; */
+	height: 1161px;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.hero {
+	width: 100%;
+	height: 167px;
+	/* border: 1px solid red; */
+	background: url('/images/burger-hero.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 0;
+}
+
+.hero h1 {
+	font-size: 39px;
+	line-height: 24px;
+	margin-top: 0;
+	padding-top: 30px;
+}
+
+.hero h3 {
+	font-size: 24px;
+	line-height: 14px;
+}
+
+.hero h1,
+h3 {
+	color: #fff;
+	font-weight: 400;
+	margin-left: 46px;
+}
+
+/* Cards  */
+
+.cards-container {
+	width: 100%;
+	height: 48%;
+	/* border: 1px solid orchid; */
+	margin-top: 60px;
+}
+
+.card {
+	width: 504px;
+	height: 140px;
+	/* border: 1px solid green; */
+	border-bottom: 1px solid #d2d2d2;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	font-weight: 400;
+	color: #000;
+	display: flex;
+	position: relative;
+}
+
+.emoji {
+	width: 70px;
+	height: 89px;
+}
+
+.card-text {
+	margin: 0;
+	margin-left: 31px;
+}
+
+.card-text p {
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
+.title {
+	font-size: 28px;
+	line-height: 16.8px;
+}
+
+.card .ingredients {
+	color: #8b8b8b;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.price {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+i {
+	font-size: 40px;
+	color: #dedede;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+/* Order total menu */
+
+.order-total-menu {
+	width: 508px;
+	height: 319px;
+	/* border: 1px solid black; */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.order-total-menu h1 {
+	margin-top: 0;
+	text-align: center;
+}
+
+.order-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.order-text {
+	display: flex;
+	justify-content: space-around;
+}
+
+.order-text div {
+	display: flex;
+	margin-bottom: 22px;
+}
+
+.remove {
+	color: #bbb;
+	font-family: Verdana;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px; /* 200% */
+	margin-left: 13px;
+}
+
+.order-total-menu {
+	position: relative;
+}
+
+hr {
+	margin-bottom: 14px;
+}
+
+.btn {
+	width: 508px;
+	padding: 18px 175px 18px 194px;
+	display: flex;
+	align-items: center;
+	background: #16db99;
+	border-radius: 3px;
+	color: var(--white, #fff);
+	font-family: Verdana;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	display: block;
+	position: absolute;
+	bottom: 0;
+}
+
+/* modal  */
+
+.modal-container {
+	width: 524px;
+	height: 542px;
+	border-radius: 4px;
+	border: 1px solid black;
+	position: relative;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.modal-container h2 {
+	color: #000;
+	font-family: Verdana;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 31px;
+	margin-bottom: 46px;
+	margin-top: 47px;
+	text-align: center;
+}
+
+.modal-container input {
+	width: 475.911px;
+	height: 71.304px;
+	border-radius: 3.89px;
+	border: 1.297px solid #757575;
+	color: #757575;
+	font-family: Verdana;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 31px;
+	margin-bottom: 23px;
+}
+
+.pay-btn {
+	width: 475px;
+	height: 71px;
+	border-radius: 4px;
+	background: #16db99;
+	color: var(--white, #fff);
+	font-family: Verdana;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 31px;
+	position: absolute;
+	bottom: 29px;
+}
+
+/* order complete */
+.order-complete {
+	width: 504px;
+	height: 120px;
+	flex-shrink: 0;
+	border-radius: 3px;
+	background: #ecfdf5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.order-complete h2 {
+	color: #065f46;
+	font-family: Smythe;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 16.8px;
+	color: #065f46;
+	text-align: center;
+}

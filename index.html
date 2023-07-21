@@ -1,9 +1,104 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-       <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-	<script src="index.js"></script>
-    </body>
-</html>
+	<head>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+			rel="stylesheet"
+		/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
 
+  <!-- Main Order Menu -->
+
+		<div class="container">
+			<div class="hero">
+				<h1>Restaurant App</h1>
+				<h3>The best burgers and pizzas in town</h3>
+			</div>
+			<div class="cards-container">
+				<div class="card card-1">
+					<img class="emoji" src="/images/pizza.png" />
+					<div class="card-text">
+						<p class="title">Pizza</p>
+						<p class="ingredients">pepperoni,mushroom,mozarella</p>
+						<p class="price">$14</p>
+					</div>
+          <i class="fa-solid fa-plus"></i>
+				</div>
+				<div class="card card-2">
+            <img class="emoji" src="/images/burger-img.png" />
+            <div class="card-text">
+              <p class="title">Burger</p>
+              <p class="ingredients">beef, cheese, lettuce</p>
+              <p  class="price">$12</p>
+          </div>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+				<div class="card card-3">
+          <img class="emoji" src="/images/beer-img.png" />
+					<div class="card-text">
+						<p class="title">Beer</p>
+						<p class="ingredients">grain, hops, yeast, water</p>
+						<p class="price">$12</p>
+        </div>
+        <i class="fa-solid fa-plus"></i>
+			</div>
+		</div>
+
+    <!-- Order Total Menu -->
+
+    <div class="order-total-menu">
+      <h1>Your Order</h1>
+      <div class="order-container">
+        <div class="order-text">
+          <div>
+            <p class="title">Item</p>
+            <p class="remove">remove</p>
+          </div>
+          <p class="price">Price</p>
+        </div>
+        <div class="order-text">
+          <div>
+            <p class="title">Item</p>
+            <p class="remove">remove</p>
+          </div>
+          <p class="price">Price</p>
+        </div>
+
+      </div>
+      <hr>
+      <div class="total-container">
+        <div class="order-text">
+          <p class="title">Total Price</p>
+          <p class="price">Price</p>
+        </div>
+        <button class="btn">complete order</button>
+      </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <!-- <div class="modal-container">
+      <h2>Enter card details</h2>
+      <form action="">
+        <input type="text" placeholder="Enter your name" required>
+        <input type="text" placeholder="Enter card number" required>
+        <input type="text" placeholder="Enter CVV" required>
+        <button class="pay-btn">Pay</button>
+      </form>
+    </div> -->
+
+    <!-- order is on the way -->
+    <!-- <div class="order-complete">
+      <h2>Thank you, James! Your order is on the way!</h2>
+    </div> -->
+
+		<script src="index.js"></script>
+	</body>
+</html>
