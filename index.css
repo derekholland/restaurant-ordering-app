@@ -109,6 +109,29 @@ i {
 i:hover {
 	cursor: pointer;
 }
+/* order complete */
+.order-complete {
+	width: 504px;
+	height: 120px;
+	border-radius: 3px;
+	background: #ecfdf5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	left: 50px;
+	display: none;
+}
+
+.order-complete h2 {
+	color: #065f46;
+	font-family: Smythe;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 16.8px;
+	color: #065f46;
+	text-align: center;
+}
 
 /* Order total menu */
 
@@ -167,10 +190,6 @@ hr {
 	margin-bottom: 14px;
 }
 
-.order-total-menu {
-	position: relative;
-}
-
 #summary {
 	display: none;
 }
@@ -188,18 +207,28 @@ hr {
 	font-weight: 700;
 	line-height: 24px;
 	display: block;
-	position: absolute;
 	bottom: 0;
+	margin-top: 30px;
+	margin-bottom: 100px;
 }
 
 /* modal  */
 
-.modal-container {
+.modal {
 	width: 524px;
 	height: 542px;
 	border-radius: 4px;
 	border: 1px solid black;
+	background: #fff;
 	position: relative;
+	position: fixed;
+	top: 130px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
 }
 
 form {
@@ -208,7 +237,7 @@ form {
 	align-items: center;
 }
 
-.modal-container h2 {
+.modal h2 {
 	color: #000;
 	font-family: Verdana;
 	font-size: 24px;
@@ -219,7 +248,7 @@ form {
 	text-align: center;
 }
 
-.modal-container input {
+.modal input {
 	width: 475.911px;
 	height: 71.304px;
 	border-radius: 3.89px;
@@ -244,26 +273,4 @@ form {
 	line-height: 31px;
 	position: absolute;
 	bottom: 29px;
-}
-
-/* order complete */
-.order-complete {
-	width: 504px;
-	height: 120px;
-	flex-shrink: 0;
-	border-radius: 3px;
-	background: #ecfdf5;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.order-complete h2 {
-	color: #065f46;
-	font-family: Smythe;
-	font-size: 32px;
-	font-weight: 400;
-	line-height: 16.8px;
-	color: #065f46;
-	text-align: center;
 }
