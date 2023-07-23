@@ -12,7 +12,9 @@
 		/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="index.css" />
+    <title>Menu App</title>
 	</head>
+
 	<body>
 
   <!-- Main Order Menu -->
@@ -22,8 +24,9 @@
 				<h1>Restaurant App</h1>
 				<h3>The best burgers and pizzas in town</h3>
 			</div>
+
 			<div class="cards-container">
-				<div class="card card-1">
+				<!-- <div class="card card-1">
 					<img class="emoji" src="/images/pizza.png" />
 					<div class="card-text">
 						<p class="title">Pizza</p>
@@ -49,38 +52,29 @@
 						<p class="price">$12</p>
         </div>
         <i class="fa-solid fa-plus"></i>
-			</div>
+			</div> -->
 		</div>
 
     <!-- Order Total Menu -->
-
     <div class="order-total-menu">
-      <h1>Your Order</h1>
+      <h1 id="order-title">Your Order</h1>
       <div class="order-container">
+        
+      </div>
+     
+      <div id="summary">
+        <hr>
+  
         <div class="order-text">
           <div>
-            <p class="title">Item</p>
-            <p class="remove">remove</p>
+            <p class="title">Total Price</p>
           </div>
-          <p class="price">Price</p>
-        </div>
-        <div class="order-text">
-          <div>
-            <p class="title">Item</p>
-            <p class="remove">remove</p>
-          </div>
-          <p class="price">Price</p>
+          <p class="price" id="total"></p>
         </div>
 
       </div>
-      <hr>
-      <div class="total-container">
-        <div class="order-text">
-          <p class="title">Total Price</p>
-          <p class="price">Price</p>
-        </div>
-        <button class="btn">complete order</button>
-      </div>
+
+     
     </div>
 
     <!-- Checkout Modal -->
@@ -99,6 +93,6 @@
       <h2>Thank you, James! Your order is on the way!</h2>
     </div> -->
 
-		<script src="index.js"></script>
+		<script src="index.js" type="module"></script>
 	</body>
 </html>

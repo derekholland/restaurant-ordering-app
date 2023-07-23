@@ -106,12 +106,19 @@ i {
 	top: 10px;
 }
 
+i:hover {
+	cursor: pointer;
+}
+
 /* Order total menu */
+
+#order-title {
+	display: none;
+}
 
 .order-total-menu {
 	width: 508px;
-	height: 319px;
-	/* border: 1px solid black; */
+	/* height: 319px; */
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -124,16 +131,21 @@ i {
 .order-container {
 	display: flex;
 	flex-direction: column;
+	text-align: left;
+	margin-bottom: 10px;
 }
 
 .order-text {
 	display: flex;
-	justify-content: space-around;
 }
 
 .order-text div {
 	display: flex;
 	margin-bottom: 22px;
+}
+
+.order-text .price {
+	margin-left: auto;
 }
 
 .remove {
@@ -146,12 +158,21 @@ i {
 	margin-left: 13px;
 }
 
+.remove:hover {
+	cursor: pointer;
+}
+
+hr {
+	margin-top: 28px;
+	margin-bottom: 14px;
+}
+
 .order-total-menu {
 	position: relative;
 }
 
-hr {
-	margin-bottom: 14px;
+#summary {
+	display: none;
 }
 
 .btn {
